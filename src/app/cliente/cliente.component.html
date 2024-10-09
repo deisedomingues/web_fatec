@@ -1,0 +1,33 @@
+<h1>Meu Cadastro</h1>
+<b>{{mensagem}}</b>
+
+<div class="form-container">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" [(ngModel)]="obj.nome"><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="obj.email"><br>
+
+    <label for="documento">Documento:</label>
+    <input type="text" id="documento" [(ngModel)]="obj.documento"><br>
+
+    <label for="telefone">Telefone:</label>
+    <input type="text" id="telefone" [(ngModel)]="obj.telefone"><br>
+
+    <label for="logradouro">Logradouro:</label>
+    <input type="text" id="logradouro" [(ngModel)]="obj.logradouro"><br>
+
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" [(ngModel)]="obj.cep"><br>
+
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" [(ngModel)]="obj.cidade"><br>
+
+    <label for="complemento">Complemento:</label>
+    <input type="text" id="complemento" [(ngModel)]="obj.complemento"><br>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" [(ngModel)]="obj.senha"><br>
+
+    <button class="gravar" (click)="gravar()">Gravar</button>
+</div>

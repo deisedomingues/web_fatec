@@ -1,0 +1,9 @@
+<div class="redefinir-senha-container">
+    <h1>Redefinir Senha</h1>
+    <b class="mensagem">{{mensagem}}</b>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="obj.email" placeholder="Digite seu email">
+    
+    <button (click)="reenviar()">Enviar</button>
+</div>

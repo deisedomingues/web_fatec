@@ -1,0 +1,39 @@
+<h1>Cesta de Compras</h1>
+
+<b>{{mensagem}}</b>
+<!-- A mensagem é "Cesta vazia, adicione novos itens!", programada no arquivo "cesta.component.ts" -->
+
+<!-- O marcador <THEAD></THEAD> "Table Head Element" ou linha de cabeçalho de uma tabela HTML, é utilizado para destacar os títulos das colunas de uma tabela.
+O marcador <THEAD></THEAD> tem como principais propriedades a de "negritar" o conteúdo das células, como também alinhar automaticamente os títulos das colunas no centro das células e deverão ter suas tags trocadas de <TD></TD> para <TH></TH>. -->
+
+<table>
+    <thead> 
+        <tr>
+            <th>Cod.</th>
+            <th>Nome</th>
+            <th>Qtd</th>
+            <th>Valor R$</th>
+            <th>Total por Item R$</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <!-- Para cada item uma nova linha -->
+    <tbody>
+        <tr *ngFor="let x of cesta.itens"> 
+            <td>{{x.codigo}}</td>
+            <td>{{x.produto.nome}}</td>
+            <td>{{x.quantidade}}</td>
+            <td>R$ {{x.produto.valor}}</td>
+            <td>R$ {{x.valor}}</td>
+            <td><button (click)="removerItem(x)">x</button></td>
+        </tr>
+        <tr>
+            <td colspan="4">Total</td>
+            <td>R$ {{cesta.total}}</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<button class="limpar" (click)="limparCesta()">Limpar</button>

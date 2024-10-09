@@ -1,0 +1,20 @@
+<div class="vitrine-container">
+    <h4 class="mensagem">{{mensagem}}</h4>
+
+    <h3 class="produtos" *ngIf="lista.length <= 0">
+        Não existem produtos na vitrine
+    </h3>
+
+    <div class="produtos-lista" *ngFor="let item of lista">
+        <div class="item-container">
+            <h4>{{item.nome}}</h4>
+            <img src="./{{item.codigo}}.jpg" alt="{{item.nome}}" width="150px">
+            <p class="descritivo">{{item.descritivo}}</p>
+            <p class="preco">R$ {{item.valor}}</p>
+            <div class="button-group">
+                <button (click)="verDetalhe(item)">Ver Mais</button>
+                <button *ngIf="item.quantidade > 0" (click)="adicionarItem(item)">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>

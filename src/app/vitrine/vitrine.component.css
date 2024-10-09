@@ -1,0 +1,101 @@
+/* Estilo do container da vitrine */
+.vitrine-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Estilo da mensagem */
+.mensagem {
+    color: #1a93a3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos produtos */
+.produtos {
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Estilo da lista de produtos */
+.produtos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilo de cada item */
+.item-container {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: calc(33% - 20px); /* Ajuste para 3 itens por linha */
+    text-align: center;
+}
+
+/* Estilo das imagens */
+.item-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilo do descritivo e preço */
+.descritivo {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.preco {
+    font-weight: bold;
+    color: #3a0675; 
+    margin: 10px 0;
+}
+
+/* Estilo do grupo de botões */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Estilo do botão "Limpar" */
+button.limpar {
+    padding: 10px 15px;
+    background-color: #ffc107; /* Amarelo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.limpar:hover {
+    background-color: #b98d06; 
+}
+
+/* Estilo do botão "Excluir" */
+button.excluir {
+    padding: 10px 15px;
+    background-color: #eca013; /* Laranja */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.excluir:hover {
+    background-color: #c9302c; /* Laranja escuro ao passar o mouse */
+}
+
+/* Estilo do botão quando desativado */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #9008b9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo do título */
+h1 {
+    margin: 0;
+}
+
+/* Estilo do menu de navegação */
+nav {
+    margin-top: 15px;
+}
+
+/* Estilo dos links do menu */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    margin-top: 20px;
+    text-align: center;
+}

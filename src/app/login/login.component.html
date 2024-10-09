@@ -1,0 +1,17 @@
+<div class="login-container">
+    <h2>Seja bem-vindo(a)!</h2>
+    <b class="mensagem">{{mensagem}}</b>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="obj.email" placeholder="Digite seu email">
+    
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" [(ngModel)]="obj.senha" placeholder="Digite sua senha">
+    
+    <div class="button-group">
+        <button (click)="fazerLogin()">Entrar</button>
+        <button (click)="novoCadastro()">Novo cadastro</button>
+    </div>
+    
+    <a class="recuperar-senha" href="./esqueci">Recuperar senha</a>
+</div>

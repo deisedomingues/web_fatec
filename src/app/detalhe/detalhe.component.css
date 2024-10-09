@@ -1,0 +1,79 @@
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo da mensagem */
+.mensagem {
+    color: #3a0675; /* Alterado para roxo */
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Estilo do contêiner de detalhe */
+.detalhe-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo do nome do item */
+.item-nome {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilo da imagem do item */
+.item-imagem {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Estilo da descrição do item */
+.item-descritivo {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Estilo do preço do item */
+.item-preco {
+    font-size: 20px;
+    color: #28a745; /* Mantido como verde */
+    margin-bottom: 20px;
+}
+
+/* Estilo das ações */
+.acoes {
+    margin-top: 20px;
+}
+
+/* Estilo do botão "Comprar" */
+button.comprar {
+    padding: 10px 15px;
+    background-color: #3a0675; /* Alterado para roxo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.comprar:hover {
+    background-color: #3a0675; /* Alterado para roxo */
+}
+
+/* Estilo da mensagem de "Sem estoque" */
+.sem-estoque {
+    color: #d9534f; /* Mantido como laranja */
+    font-weight: bold;
+    margin-top: 10px;
+}

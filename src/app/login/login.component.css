@@ -1,0 +1,89 @@
+/* Estilo do container do componente "Fazer Login" */
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Estilo do título */
+h2 {
+    color: #3a0675; /* Alterado para roxo */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo da mensagem */
+.mensagem {
+    display: block;
+    color: #1a93a3; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos campos de entrada */
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 2px solid #3a0675; /* Alterado para roxo */
+    border-radius: 5px;
+    width: calc(100% - 22px);
+    font-size: 16px;
+    transition: border-color 0.3s;
+    margin-bottom: 15px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #3a0675; /* Alterado para roxo */
+    outline: none;
+}
+
+/* Estilo do grupo de botões */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 10px 15px;
+    background-color: #3a0675; /* Alterado para roxo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+button:last-child {
+    margin-right: 0;
+}
+
+button:hover {
+    background-color: #3a0675; /* Alterado para roxo */
+}
+
+/* Estilo do botão quando desativado */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Estilo do link de recuperação de senha */
+.recuperar-senha {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #3a0675; /* Alterado para roxo */
+    text-decoration: none;
+}
+
+.recuperar-senha:hover {
+    text-decoration: underline;
+}
