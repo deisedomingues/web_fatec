@@ -1,46 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
-/* Estilo geral do corpo */
+/* Cor de fundo da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 20px;
+    background-color: #f8f9fa; 
 }
 
-/* Estilo do cabeçalho */
+/* Cabeçalho */
 header {
-    background-color: #9008b9;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #004d00; 
+    color: white; 
 }
 
-/* Estilo do título */
-h1 {
-    margin: 0;
+/* Botões */
+.btn {
+    background-color: #006400; 
+    color: white; 
 }
 
-/* Estilo do menu de navegação */
-nav {
-    margin-top: 15px;
+.btn:hover {
+    background-color: #004d00; /* Verde mais escuro ao passar o mouse */
 }
 
-/* Estilo dos links do menu */
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    padding: 10px;
-    transition: background-color 0.3s;
-    border-radius: 5px;
-}
-
-nav a:hover {
-    background-color: #0056b3;
-}
-
-/* Estilo do conteúdo principal */
-main {
-    margin-top: 20px;
-    text-align: center;
+/* Campo de busca */
+.input-group input {
+    border: 1px solid #006400; 
 }

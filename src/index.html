@@ -1,27 +1,80 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt">
 <head>
   <meta charset="utf-8">
   <title>Loja</title>
   <base href="/">
+
+  <!-- Ajustar a tela (responsividade) -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="styles.css"> <!-- Adicione um arquivo CSS -->
+ 
+  <!--Link para utilizar o Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <!-- Link para os ícones do site Font Awesome (ícone de usuário) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Adicionar o CSS a este HTML -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
-    <h1>
-      <a href="./" style="text-decoration: none; color: inherit;">Minha Loja</a>
-    </h1>
-    <nav>
-      <a href="./cliente">Meu Cadastro</a>
-      <a href="./vitrine">Promoções</a>
-      <a href="./cesta">Cesta de Compras</a>
-      <a href="./busca">Pesquisar</a>
-    </nav>
+  <!-- Cabeçalho -->
+  <header class="bg-dark text-white p-2">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <!--Fazer com que "Minha loja" seja um link que direciona à página inicial -->
+      <h1 class="m-0">
+        <a href="./" style="text-decoration: none; color: inherit;">Minha Loja</a>
+      </h1>
+      
+      <!-- Campo de busca centralizado -->
+      <div class="input-group mx-3" style="max-width: 400px;">
+        <input type="text" class="form-control" placeholder="O que você está buscando?" id="searchInput">
+        <div class="input-group-append">
+          <button class="btn btn-outline-light" id="btnBuscar">Buscar</button>
+        </div>
+      </div>
+
+      <!-- Ícone do usuário à direita -->
+      <div class="user-icon">
+        <a href="./cliente" class="btn btn-outline-light">
+          <i class="fa-solid fa-user"></i> <!-- Nome do ícone do usuário -->
+        </a>
+      </div>
+    </div>
   </header>
-  <main>
-    <app-root></app-root>
-  </main>
+
+  <div class="container">
+    <nav class="text-center my-3">
+      <a class="btn btn-secondary" href="./vitrine">Promoções</a>
+      <a class="btn btn-secondary" href="./cesta">Cesta de Compras</a>
+      <a class="btn btn-secondary" href="./busca">Pesquisar</a>
+    </nav>
+
+    <main>
+      <app-root></app-root>
+    </main>
+  </div>
+
+  <script>
+    // Função de busca
+    document.getElementById('btnBuscar').addEventListener('click', function () {
+      realizarBusca();
+    });
+
+    document.getElementById('searchInput').addEventListener('keyup', function (event) {
+      if (event.key === 'Enter') {
+        realizarBusca();
+      }
+    });
+
+    function realizarBusca() {
+      var searchText = document.getElementById('searchInput').value;
+      if (searchText.trim() !== '') {
+        window.location.href = '/busca?query=' + encodeURIComponent(searchText);
+      }
+    }
+  </script>
 </body>
 </html>

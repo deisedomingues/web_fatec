@@ -1,65 +1,26 @@
-/* Estilo geral do corpo */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 20px;
-}
-
-/* Estilo do título */
-h1 {
-    color: #333;
-    text-align: center;
-}
-
-/* Estilo da mensagem */
-b {
-    color: #3a0675; /* Alterado para roxo */
-    display: block;
-    text-align: center;
-    margin: 10px 0;
-}
-
-/* Estilo da tabela */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #cfcaca;
-}
-
-/* TH é o cabeçalho da tabela */
-th {
-    background-color: #3a0675; /* Alterado para roxo */
-    color: white;
-}
-
 /* Estilo do botão "remover" */
-button {
-    padding: 5px 10px;
-    background-color: #d9534f; /* Laranja para remover */
+.btn-warning {
+    background-color: #f4f80a;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-warning:hover {
+    background-color: #ec710d;
+}
+
+/* Estilo do botão "Excluir Cesta" */
+.btn-danger {
+    background-color: #dc3545; 
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    margin: 20px auto;
+    display: block;
+    width: 200px; 
 }
 
-button:hover {
-    background-color: #c9302c; /* Cor do hover mantida */
-}
-
-/* Estilo do botão "limpar" */
-button.limpar {
-    background-color: #ffc107; /* Amarelo para limpar */
-    margin-top: 20px;
-}
-
-button.limpar:hover {
-    background-color: #e0a800; /* Cor do hover mantida */
+.btn-danger:hover {
+    background-color: #c82333; 
 }

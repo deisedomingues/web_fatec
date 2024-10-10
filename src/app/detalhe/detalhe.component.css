@@ -8,7 +8,7 @@ body {
 
 /* Estilo da mensagem */
 .mensagem {
-    color: #3a0675; /* Alterado para roxo */
+    color: #006400; 
     text-align: center;
     margin: 10px 0;
 }
@@ -59,7 +59,7 @@ body {
 /* Estilo do botão "Comprar" */
 button.comprar {
     padding: 10px 15px;
-    background-color: #3a0675; /* Alterado para roxo */
+    background-color: #006400;
     color: white;
     border: none;
     border-radius: 5px;
@@ -68,12 +68,11 @@ button.comprar {
 }
 
 button.comprar:hover {
-    background-color: #3a0675; /* Alterado para roxo */
+    background-color: #3a0675; /*Teste de cor para quando passar o mouse */
 }
 
-/* Estilo da mensagem de "Sem estoque" */
 .sem-estoque {
-    color: #d9534f; /* Mantido como laranja */
+    color: #d9534f; 
     font-weight: bold;
     margin-top: 10px;
 }

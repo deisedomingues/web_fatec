@@ -10,7 +10,7 @@
 
 /* Estilo do título */
 h1 {
-    color: #3a0675; /* Alterado para roxo */
+    color: #006400; 
     text-align: center;
     margin-bottom: 20px;
 }
@@ -18,7 +18,7 @@ h1 {
 /* Estilo da mensagem */
 .b {
     display: block;
-    color: #d9534f; /* Mantido como laranja para mensagens de erro ou destaque */
+    color: #d9534f;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -28,7 +28,7 @@ input[type="text"],
 input[type="email"],
 input[type="password"] {
     padding: 10px;
-    border: 2px solid #3a0675; /* Alterado para roxo */
+    border: 2px solid #006400;
     border-radius: 5px;
     width: calc(100% - 22px);
     font-size: 16px;
@@ -39,14 +39,14 @@ input[type="password"] {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
-    border-color: #3a0675; /* Alterado para roxo */
+    border-color: #006400;
     outline: none;
 }
 
-/* Estilo do botão de gravação */
+
 button.gravar {
     padding: 10px;
-    background-color: #3a0675; /* Alterado para roxo */
+    background-color:#006400;
     color: white;
     border: none;
     border-radius: 5px;
@@ -56,10 +56,10 @@ button.gravar {
 }
 
 button.gravar:hover {
-    background-color: #3a0675; /* Alterado para roxo */
+    background-color: #3a0675; /*teste de mudança de co do botão*/
 }
 
-/* Estilo do botão quando desativado */
+/* Botção desativado */
 button:disabled {
     background-color: #ccc;
     cursor: not-allowed;

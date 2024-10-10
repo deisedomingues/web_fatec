@@ -1,76 +1,40 @@
-/* Estilo geral do corpo */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 20px;
-}
 
-/* Estilo do título */
 h4 {
-    color: #333;
+    color: #004d00;
 }
 
-/* Estilo do campo de busca */
 input[type="text"] {
-    padding: 10px;
-    border: 2px solid #3a0675; /* Mantido como roxo */
-    border-radius: 5px;
-    width: calc(100% - 22px);
-    max-width: 400px;
-    font-size: 16px;
-    transition: border-color 0.3s;
-    margin-bottom: 20px;
+    border: 1px solid #006400; 
+    padding: 10px; 
+    width: 100%; 
+    max-width: 400px; 
+    margin-bottom: 20px; 
 }
 
-input[type="text"]:focus {
-    border-color: #3a0675; /* Alterado para roxo */
-}
-
-/* Estilo dos produtos */
+/* Mensagem para quando não houver produtos */
 .produtos {
-    color: #d9534f; /* Laranja para mensagens de alerta */
-    text-align: center;
-    margin: 20px 0;
+    color: #b22222; 
+    margin-top: 20px; 
 }
 
-/* Estilo dos itens da lista */
+/* Container para cada item */
 .item-container {
-    background-color: white;
+    border: 1px solid #e0e0e0; 
     padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 5px; 
 }
 
-/* Estilo das imagens */
-.item-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* Estilo dos botões */
+/* Botões */
 button {
-    padding: 10px 15px;
-    background-color: #3a0675; /* Alterado para roxo */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-right: 5px;
-    transition: background-color 0.3s;
+    background-color: #006400; 
+    color: white; 
+    border: none; /* Sem borda */
+    padding: 10px 15px; 
+    cursor: pointer; 
+    margin-right: 5px; /* Espaço entre os botões */
 }
 
 button:hover {
-    background-color: #3a0675; /* Alterado para roxo */
-}
-
-/* Estilo do botão "Comprar" quando não disponível */
-button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
+    background-color: #004d00; /* Altera a cor ao passar o mouse */
 }

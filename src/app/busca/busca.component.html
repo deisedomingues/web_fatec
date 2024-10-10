@@ -10,7 +10,7 @@ Busca:
 <div *ngFor="let item of lista" class="item-container">
     <div *ngIf="item.descritivo.toLowerCase().indexOf(filtro.toLowerCase()) >= 0">
         <h4>{{item.nome}}</h4>
-        <img src="./{{item.codigo}}.jpg" width="150px"><br>
+        <img src="./{{item.codigo}}.png" width="150px"><br>
         {{item.descritivo}}<br><br>
         R$ {{item.valor}}<br>
         <button (click)="verDetalhe(item)">Ver Mais</button>

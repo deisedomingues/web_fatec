@@ -1,39 +1,39 @@
-<h1>Cesta de Compras</h1>
+<h1 class="text-center">Cesta de Compras</h1> 
 
-<b>{{mensagem}}</b>
-<!-- A mensagem é "Cesta vazia, adicione novos itens!", programada no arquivo "cesta.component.ts" -->
+<b class="d-block text-center">{{mensagem}}</b>
 
-<!-- O marcador <THEAD></THEAD> "Table Head Element" ou linha de cabeçalho de uma tabela HTML, é utilizado para destacar os títulos das colunas de uma tabela.
-O marcador <THEAD></THEAD> tem como principais propriedades a de "negritar" o conteúdo das células, como também alinhar automaticamente os títulos das colunas no centro das células e deverão ter suas tags trocadas de <TD></TD> para <TH></TH>. -->
-
-<table>
-    <thead> 
+<table class="table table-striped"> 
+    <thead class="thead-dark"> <!-- Cabeçalho escuro -->
         <tr>
-            <th>Cod.</th>
-            <th>Nome</th>
-            <th>Qtd</th>
-            <th>Valor R$</th>
-            <th>Total por Item R$</th>
-            <th>Ações</th>
+            <th>Cod.</th> 
+            <th>Nome</th> 
+            <th>Qtd</th> 
+            <th>Valor R$</th> 
+            <th>Total por Item R$</th> 
+            <th>Ações</th> 
         </tr>
     </thead>
 
-    <!-- Para cada item uma nova linha -->
     <tbody>
-        <tr *ngFor="let x of cesta.itens"> 
-            <td>{{x.codigo}}</td>
-            <td>{{x.produto.nome}}</td>
-            <td>{{x.quantidade}}</td>
-            <td>R$ {{x.produto.valor}}</td>
-            <td>R$ {{x.valor}}</td>
-            <td><button (click)="removerItem(x)">x</button></td>
+        <!-- Para cada item na cesta, cria uma nova linha -->
+        <tr *ngFor="let x of cesta.itens">
+            <td>{{x.codigo}}</td> 
+            <td>{{x.produto.nome}}</td> 
+            <td>{{x.quantidade}}</td> 
+            <td>R$ {{x.produto.valor}}</td> 
+            <td>R$ {{x.valor}}</td> 
+            <td>
+                <button class="btn btn-warning" (click)="removerItem(x)">Excluir</button>
+            </td>
         </tr>
         <tr>
-            <td colspan="4">Total</td>
-            <td>R$ {{cesta.total}}</td>
-            <td></td>
+            <!-- Deixar a palavra "Total" em negrito e a linha do total deve ocupar 4 colunas -->
+            <td colspan="4" class="font-weight-bold">Total</td> 
+            <td>R$ {{cesta.total}}</td> <!-- Exibe o total da cesta -->
+            <td></td> 
         </tr>
     </tbody>
 </table>
 
-<button class="limpar" (click)="limparCesta()">Limpar</button>
+<!-- Botão para limpar a cesta -->
+<button class="btn btn-warning" (click)="limparCesta()">Excluir Cesta</button> <!-- Botão amarelo para limpar a cesta -->
